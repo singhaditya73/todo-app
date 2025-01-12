@@ -74,8 +74,15 @@ export default function TodoApp() {
           value={newTodo}
           onChange={(e: ChangeEvent<HTMLInputElement>) => setNewTodo(e.target.value)}
           placeholder="Add a new todo..."
-          className="border p-2 rounded w-full"
+          className="border p-2 py-2 rounded w-full bg-white mb-4 text-slate-900"
         />
+        <div className="flex justify-center">
+        <button
+        type="submit"
+        className="bg-blue-500  text-white px-2 py-2 rounded hover:bg-blue-600 ">
+          Add Todo
+        </button>
+        </div>
       </form>
 
       <ul>
